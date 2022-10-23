@@ -130,7 +130,7 @@ class City:
     def __init__(self, name, population):
         self.name = name
         self.population = population
-        print(f"Welcome to {self.name}")
+        print(f"Your city population > 1500 {self.name}")
 
 
 Kyiv = City('Kyiv', 3500)
