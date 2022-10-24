@@ -68,17 +68,13 @@ myschool.main_subject('Undefined')
 
 
 # 6*. Створіть новий клас SchoolBus, який успадкує всі методи від School і Bus і матиме власний - bus_school_color
-
-def bus_school_color(bus_school_color):
-    print(f'The bus school color is {bus_school_color}')
-
-
 class SchoolBus(School, Bus):
-    pass
+    def bus_school_color(self, bus_school_color):
+        print(f'The bus school color is {bus_school_color}')
 
 
 mybus = SchoolBus((65, 22222), (1, 300))
-bus_school_color('yellow')
+mybus.bus_school_color('yellow')
 
 
 # 7. Поліморфізм: Створіть два класи: Bear, Wolf. Обидва вони повинні мати метод eat. Створіть два екземпляри:
