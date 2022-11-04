@@ -218,11 +218,15 @@ class Student:
     id = 0
     name = ""
 
-    def __init__(self, id, name, email):
+    def __init__(self, id, name):
         self.id = id
         self.name = name
-        self.student_email = email
+        # self.student_email = email
 
 
-my_student = Student(11, 'myname', 'myemail@test.com')
-print(getattr(my_student, 'student_email'))
+student = Student(1, 'myname')
+setattr(student, 'student_email', 'myemail@test.com')
+print(student.__dict__)
+email = getattr(student, 'student_email')
+print(email)
+
